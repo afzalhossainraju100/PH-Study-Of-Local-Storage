@@ -21,3 +21,16 @@ const getObjectFromLS = () => {
     console.log("Object From LS", customerString);
 }
 
+const handleAddProduct = () => {
+  console.log("Add Product Clicked");
+  const product = document.getElementById("product").value;
+  const quantity = document.getElementById("quantity").value;
+  console.log(product, quantity);
+  const cart = { product, quantity };
+  localStorage.setItem("Cart", JSON.stringify(cart));
+};
+const viewCart = () => {
+  const viewCart = JSON.parse(localStorage.getItem("Cart"));
+  console.log("Cart from LS", viewCart.product);
+};
+
