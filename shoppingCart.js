@@ -16,4 +16,8 @@ const getNumberFromLS = () => {
     const number = localStorage.getItem("Number");
     console.log("From saved local storage", number);
 }
+const getObjectFromLS = () => {
+    const customerString = JSON.parse(localStorage.getItem("customer"));
+    console.log("Object From LS", customerString);
+}
 
