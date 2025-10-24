@@ -10,8 +10,10 @@ const setObjectToLS = () => {
         city: "New York",
         product: 3
     }
+    localStorage.setItem("customer", JSON.stringify(customer));
 }
 const getNumberFromLS = () => {
     const number = localStorage.getItem("Number");
     console.log("From saved local storage", number);
 }
+
