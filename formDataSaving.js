@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const val = e.target.value;
         if (val) {
             localStorage.setItem("email", val);
+            JSON.parse(localStorage.getItem("email"));
         } else {
             localStorage.removeItem("email");
         }
