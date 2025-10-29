@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Cart</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Welcome to the Shopping Cart</h1>
     <p>Your cart is currently empty.</p>
 
@@ -14,28 +14,31 @@
     <button onclick="setObjectToLS()">Object to LS</button>
     <button onclick="getObjectFromLS()">Read Object From Local Storage</button>
 
-    <br> <br>
+    <br />
+    <br />
 
-
-    <input id="product" type="text" placeholder="Product Name">
-    <input id="quantity" type="number" placeholder="Quantity">
-    <br>
+    <input id="product" type="text" placeholder="Product Name" />
+    <input id="quantity" type="number" placeholder="Quantity" />
+    <input type="email" id="email" placeholder="Enter your email" />
+    <br />
     <button onclick="handleAddProduct()">Add to Cart</button>
     <button onclick="viewCart()">View Cart</button>
-        <br><br>
-    <hr>
+    <button onclick="toggleTheme()" id="toggleTheme">Toggle Theme</button>
+    <br /><br />
+    <hr />
 
     <h1>Your Cart Items</h1>
 
-   <div id="cartContainer">
-    <ul id="cartItems"></ul>
-   </div>
-
-
-
-
-
+    <div id="cartContainer">
+      <ul id="cartItems"></ul>
+    </div>
 
     <script src="./shoppingCart.js"></script>
-</body>
+    <script src="/commonLocalStorage.js"></script>
+    <script src="./storingArrays.js"></script>
+    <script src="./storingObject.js"></script>
+    <script src="./visitCounter.js"></script>
+    <script src="./formDataSaving.js"></script>
+    <script src="./ThemeToggleDarkLilghtMood.js"></script>
+  </body>
 </html>
